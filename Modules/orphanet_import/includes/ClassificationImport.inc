@@ -127,6 +127,7 @@ class ClassificationImport {
         }
 
         node_save($disorder_node);
+        $this->disorder_list[(string) $id] = $disorder_node->nid;
         return $disorder_node->nid;
 
 //        return $id;
